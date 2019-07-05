@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>spring-security-demo-08-jdbc-plaintext</name>
+	<name>spring-security-rest</name>
 	<comment></comment>
 	<projects>
 	</projects>
