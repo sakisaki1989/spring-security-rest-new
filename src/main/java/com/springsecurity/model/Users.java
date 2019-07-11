@@ -87,6 +87,38 @@ public class Users {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+	public Users(String username, String password, int enabled, String role) {
+		this.username = username;
+		this.password = password;
+		this.enabled = enabled;
+		this.role = role;
+	}
+ 
+	public Users(int id, String username, String password, int enabled, String role, String token) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.enabled = enabled;
+		this.role = role;
+		this.token = token;
+	}
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	
 	
 	

@@ -23,6 +23,7 @@ public class JwtUserDetailsService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username)
 			throws UsernameNotFoundException {
 		Users userInfo = userDAO.getUserInfo(username);
+		if(userInfo==null) return null;
 		GrantedAuthority authority = new SimpleGrantedAuthority(userInfo.getRole());
 		UserDetails userDetails = (UserDetails)new User(userInfo.getUsername(), 
 				userInfo.getPassword() , Arrays.asList(authority));
